@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <!-- Moralis SDK code -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script src="./static/js/main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/css/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">QuickSwap Testnet</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-primary" id="btn-login">Login with MM</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+          <div class="swap_container col col-md-6 offset-md-3">
+            <h4>Swap<h4>
+            <div id="form">
+              <div class="swapbox">
+                <div class="swapbox_select_token token_select" id="from_token_select">
+                  <img class="token_icon" id="from_token_icon">
+                  <span id="from_token_text">Select token</span>
+                </div>
+                <div class="swapbox_select_amount">
+                  <input type="input" class="number form-control" placeholder="amount" name="from_token" id="from_token_amount">
+                </div>
+              </div>
+              <div class="swapbox">
+                <div class="swapbox_select_token token_select" id="to_token_select">
+                  <img class="token_icon" id="to_token_icon">
+                  <span id="to_token_text">Select token</span>
+                </div>
+                <div class="swapbox_select_amount">
+                  <input type="input" class="number form-control" placeholder="amount" name="to_token" id="to_token_amount">
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="swap_container col col-md-6 offset-md-3">
+            <h4>Add Liquidity<h4>
+            <div id="form">
+              <div class="swapbox">
+                <div class="swapbox_select_token token_select" id="liquidity_from_token_select">
+                  <img class="token_icon" id="liquidity_from_token_icon">
+                  <span id="liquidity_from_token_text">Select token</span>
+                </div>
+                <div class="swapbox_select_amount">
+                  <input type="input" class="number form-control" placeholder="amount" name="from_token" id="liquidity_from_token_amount">
+                </div>
+              </div>
+              <div class="swapbox">
+                <div class="swapbox_select_token token_select" id="liquidity_to_token_select">
+                  <img class="token_icon" id="liquidity_to_token_icon">
+                  <span id="liquidity_to_token_text">Select token</span>
+                </div>
+                <div class="swapbox_select_amount">
+                  <input type="input" class="number form-control" placeholder="amount" name="to_token" id="liquidity_to_token_amount">
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-dark" id="approve_token">
+                <span aria-hidden="true">Approve</span>
+            </button>
+            <button type="button" class="btn btn-dark" id="submit_add_liquidity">
+                <span aria-hidden="true">Submit</span>
+            </button>
+          </div>
+      </div>
+    </div>
+    <div class="modal" id="token_modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Select token</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="model_close_btn">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="token_list">
+              <!-- <p>Modal body text goes here.</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- <button id="btn-logout">Logout</button> -->
+  </body>
+</html>

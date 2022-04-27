@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ethereum-boilerplate/static/css/main.5b25e332.chunk.css",
+    "main.js": "/ethereum-boilerplate/static/js/main.bd1372b5.chunk.js",
+    "main.js.map": "/ethereum-boilerplate/static/js/main.bd1372b5.chunk.js.map",
+    "runtime-main.js": "/ethereum-boilerplate/static/js/runtime-main.57c875bf.js",
+    "runtime-main.js.map": "/ethereum-boilerplate/static/js/runtime-main.57c875bf.js.map",
+    "static/css/2.a95be28f.chunk.css": "/ethereum-boilerplate/static/css/2.a95be28f.chunk.css",
+    "static/js/2.b3332c38.chunk.js": "/ethereum-boilerplate/static/js/2.b3332c38.chunk.js",
+    "static/js/2.b3332c38.chunk.js.map": "/ethereum-boilerplate/static/js/2.b3332c38.chunk.js.map",
+    "index.html": "/ethereum-boilerplate/index.html",
+    "static/css/2.a95be28f.chunk.css.map": "/ethereum-boilerplate/static/css/2.a95be28f.chunk.css.map",
+    "static/css/main.5b25e332.chunk.css.map": "/ethereum-boilerplate/static/css/main.5b25e332.chunk.css.map",
+    "static/js/2.b3332c38.chunk.js.LICENSE.txt": "/ethereum-boilerplate/static/js/2.b3332c38.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.57c875bf.js",
+    "static/css/2.a95be28f.chunk.css",
+    "static/js/2.b3332c38.chunk.js",
+    "static/css/main.5b25e332.chunk.css",
+    "static/js/main.bd1372b5.chunk.js"
+  ]
+}

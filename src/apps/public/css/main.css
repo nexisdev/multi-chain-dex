@@ -1,0 +1,55 @@
+.swap_container {
+    background: #000;
+    color: #191B1F;
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 0 5px black;
+}
+
+.swapbox_select_token {
+    width: 50%;
+    float: left;
+}
+
+.swapbox_select_amount {
+    width: 50%;
+    float: right;
+}
+
+.swapbox {
+    overflow: auto;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #2f2f2f;
+    border-radius: 16px;
+    border: 1px solid #565656;
+}
+
+.token_select {
+    padding: 5px 0;
+}
+.token_select:hover {
+    background-color: #464646;
+    cursor: pointer;
+}
+
+.token_list_img {
+    width: 36px;
+}
+
+.token_icon {
+    width: 36px;
+}
+
+.modal-body {
+    height: 600px;
+    overflow: scroll;
+}
+.token_row {
+    padding: 10px 0 0 0;
+}
+.token_row:hover {
+    background-color: #e4e4e3;
+    cursor: pointer;
+}
