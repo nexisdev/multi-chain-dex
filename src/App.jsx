@@ -18,7 +18,11 @@ import Contract from "components/Contract/Contract";
 import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
+import LogoName from './components/assets/exzo.png';
+import background from './components/assets/background.png'
 const { Header, Footer } = Layout;
+
+
 
 const styles = {
   content: {
@@ -26,8 +30,12 @@ const styles = {
     justifyContent: "center",
     fontFamily: "Roboto, sans-serif",
     color: "#041836",
-    marginTop: "130px",
+    marginTop: "60px",
+    marginBottom: "-48px",
     padding: "10px",
+    backgroundImage: `url(${background})`,
+    height:'100%',
+    backgroundSize: 'cover',
   },
   header: {
     position: "fixed",
@@ -67,10 +75,9 @@ const App = ({ isServerInfo }) => {
           <div style={styles.headerRight}>
             <Chains />
             <TokenPrice
-              address="0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
-              chain="eth"
-              image="https://cloudflare-ipfs.com/ipfs/QmXttGpZrECX5qCyXbBQiqgQNytVGeZW5Anewvh2jc4psg/"
-              size="40px"
+              image="https://exzonetwork.mypinata.cloud/ipfs/QmVfkWAzVmc9D6Z8M4Vk5x5ffuLtJU4zwZUhSmXYTEj7dE"
+              size="32px"
+              margin="10px"
             />
             <NativeBalance />
             <Account />
@@ -132,8 +139,9 @@ const App = ({ isServerInfo }) => {
 };
 
 export const Logo = () => (
-<div>
-</div>
+  <div style={{ display: "flex" }}>
+    <img src={LogoName} alt="logo" width="230px" size="32px" margin-left="10px"/>
+  </div>
 );
 
 export default App;

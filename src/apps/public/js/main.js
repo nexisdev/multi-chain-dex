@@ -263,10 +263,10 @@ async function init() {
 async function listAvailableTokens() {
     const tokenList = document.getElementById("token_list");
     tokens = {
-        '0x326C977E6efc84E512bB9C30f76E30c160eD06FB': {
-            'symbol': 'LINK',
-            'address': '0x326C977E6efc84E512bB9C30f76E30c160eD06FB',
-            'logoURI': 'https://tokens.1inch.io/0x514910771af9ca656af840dff83e8264ecf986ca.png'
+        '0xF8fC63200e181439823251020d691312FDcF5090': {
+            'symbol': 'EXZO',
+            'address': '0xF8fC63200e181439823251020d691312FDcF5090',
+            'logoURI': 'https://assets.coingecko.com/coins/images/16279/small/cropped-exzocoin-favicon-cryptocurrency.png?1623635975'
         },
         '0x0fa8074acf7bbc635a44e0f22c3db7ffd3d8e39f': {
             'symbol': 'MEME',
@@ -375,6 +375,7 @@ $(document).ready(() => {
     document.getElementById("to_token_amount").onblur = getQuote;
 
     if (Moralis.User.current()) {
+        // eslint-disable-next-line no-undef
         document.getElementById("btn-login").innerHTML = Moralis.User.current().get("ethAddress");
     }
     // document.getElementById("btn-logout").onclick = logOut;
