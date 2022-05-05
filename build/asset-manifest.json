@@ -1,23 +1,21 @@
 {
   "files": {
-    "main.css": "/ethereum-boilerplate/static/css/main.5b25e332.chunk.css",
-    "main.js": "/ethereum-boilerplate/static/js/main.bd1372b5.chunk.js",
-    "main.js.map": "/ethereum-boilerplate/static/js/main.bd1372b5.chunk.js.map",
-    "runtime-main.js": "/ethereum-boilerplate/static/js/runtime-main.57c875bf.js",
-    "runtime-main.js.map": "/ethereum-boilerplate/static/js/runtime-main.57c875bf.js.map",
-    "static/css/2.a95be28f.chunk.css": "/ethereum-boilerplate/static/css/2.a95be28f.chunk.css",
-    "static/js/2.b3332c38.chunk.js": "/ethereum-boilerplate/static/js/2.b3332c38.chunk.js",
-    "static/js/2.b3332c38.chunk.js.map": "/ethereum-boilerplate/static/js/2.b3332c38.chunk.js.map",
-    "index.html": "/ethereum-boilerplate/index.html",
-    "static/css/2.a95be28f.chunk.css.map": "/ethereum-boilerplate/static/css/2.a95be28f.chunk.css.map",
-    "static/css/main.5b25e332.chunk.css.map": "/ethereum-boilerplate/static/css/main.5b25e332.chunk.css.map",
-    "static/js/2.b3332c38.chunk.js.LICENSE.txt": "/ethereum-boilerplate/static/js/2.b3332c38.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.45f1d945.css",
+    "main.js": "/static/js/main.96258a39.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/Bg.png": "/static/media/Bg.a43d0f1113ce58295570.png",
+    "static/media/logo.png": "/static/media/logo.2dc4e6a367294c287602.png",
+    "static/media/Coin98.png": "/static/media/Coin98.1e4e40738d77467e19ba.png",
+    "static/media/wallet-connect.svg": "/static/media/wallet-connect.304e327744ae5c9b1b62b58f50df6734.svg",
+    "TokenPocket.svg": "/0ba487424539ab81b79fe14307e77334.svg",
+    "static/media/MathWallet.svg": "/static/media/MathWallet.19212234cfaec388ea6f339d0cea9df9.svg",
+    "SafePal.svg": "/e7068bbce0757878c2ef3e30191ce580.svg",
+    "index.html": "/index.html",
+    "main.45f1d945.css.map": "/static/css/main.45f1d945.css.map",
+    "main.96258a39.js.map": "/static/js/main.96258a39.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.57c875bf.js",
-    "static/css/2.a95be28f.chunk.css",
-    "static/js/2.b3332c38.chunk.js",
-    "static/css/main.5b25e332.chunk.css",
-    "static/js/main.bd1372b5.chunk.js"
+    "static/css/main.45f1d945.css",
+    "static/js/main.96258a39.js"
   ]
 }
