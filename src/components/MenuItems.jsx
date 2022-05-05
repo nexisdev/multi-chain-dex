@@ -10,11 +10,11 @@ function MenuItems() {
       theme="light"
       mode="horizontal"
       style={{
+        display: "flex",
         fontSize: "17px",
         fontWeight: "500",
-        width: "fit-content",
+        width: "100%",
         justifyContent: "center",
-        backgroundcolor: "rgb(25, 27, 31)",
       }}
       defaultSelectedKeys={[pathname]}
     >
@@ -35,6 +35,9 @@ function MenuItems() {
       </Menu.Item>
       <Menu.Item key="/nftBalance">
         <NavLink to="/nftBalance">NFTs</NavLink>
+      </Menu.Item>
+      <Menu.Item key="/contract">
+        <NavLink to="/contract">Contract</NavLink>
       </Menu.Item>
     </Menu>
   );

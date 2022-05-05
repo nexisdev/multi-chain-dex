@@ -6,14 +6,25 @@
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after,
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after,
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
-  border-bottom: 2px solid #21bf96 !important;
+  border-bottom: 2px solid rgba(35, 38, 223, 1) !important;
 }
 
 .ant-menu-horizontal > .ant-menu-item-selected a,
 .ant-menu-horizontal > .ant-menu-item a:hover {
-  color: #21bf96 !important;
+  color: rgba(35, 38, 223, 1) !important;
+}
+ 
+.ant-btn-primary, .ant-btn-lg {
+  background: rgba(35, 38, 223, 1) !important;
+  color: #EDF1F9 !important;
+  border: none !important;
+  border-radius: 24px !important;
+  font-size: 16px !important;
 }
 
+.anticon-arrow-down {
+  color: #EDF1F9 !important;
+}
 .ant-layout-header {
   background-color: #0C0E1B !important;
   opacity: 0.9;
@@ -58,14 +69,26 @@
   border-bottom: 0px solid transparent !important;
 }
 .ant-tabs-tab-active {
-  background: #21bf96;
+  background: rgba(35, 38, 223, 1);
   color: #fff !important;
   border-radius: 16px;
   opacity: 1 !important;
 }
+.ant-tabs-tab-focus {
+  color: rgba(35, 38, 223, 1) !important;
+  border-radius: 16px;
+  opacity: 1 !important;
+}
+
 .ant-card-body {
   color: rgb(18, 20, 38) !important;
+  padding: 16px 24px !important;
+  border: 1px solid rgb(22, 23, 46) !important;
+  border-radius: 16px !important;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 20px 0px !important;
+  position: relative !important;
 }
+
 .ant-tabs-nav-list {
   color-scheme: dark;
   line-height: 1.2;
@@ -88,6 +111,9 @@
   background-color: rgb(18, 20, 38);
   position: top;
   border-radius: 24px;
+  border: 1px solid rgb(22, 23, 46) !important;
+  border-radius: 16px !important;
+  position: relative !important;
 }
 
 .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar-animated {
@@ -115,10 +141,16 @@
 
 .ant-menu-horizontal > .ant-menu-item a {
   color: #fff !important;
+  font-family: Poppins, sans-serif !important;
+  font-size: 14px !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 .ant-menu-horizontal > .ant-menu-item-selected a {
   color: #fff !important;
+  font-family: Poppins, sans-serif !important;
+  font-size: 14px !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
   color: #fff !important;
@@ -145,18 +177,17 @@
   border-bottom: none !important;
 }
 .ant-layout {
-  background:-moz-radial-gradient(circle at 96% 93%, rgba(0, 123, 255, 1) 0%, rgba(12, 98, 190, 1) 11%, rgba(6, 58, 113, 1) 30%, rgba(4, 12, 24, 1) 100%);
-  background:-webkit-radial-gradient(circle at 96% 93%, rgba(0, 123, 255, 1) 0%, rgba(12, 98, 190, 1) 11%, rgba(6, 58, 113, 1) 30%, rgba(4, 12, 24, 1) 100%);
-  background:-o-radial-gradient(circle at 96% 93%, rgba(0, 123, 255, 1) 0%, rgba(12, 98, 190, 1) 11%, rgba(6, 58, 113, 1) 30%, rgba(4, 12, 24, 1) 100%);
-  background:-ms-radial-gradient(circle at 96% 93%, rgba(0, 123, 255, 1) 0%, rgba(12, 98, 190, 1) 11%, rgba(6, 58, 113, 1) 30%, rgba(4, 12, 24, 1) 100%);
-  background:radial-gradient(circle at 96% 93%, rgba(0, 123, 255, 1) 0%, rgba(12, 98, 190, 1) 11%, rgba(6, 58, 113, 1) 30%, rgba(4, 12, 24, 1) 100%);
-  position: center;
+  background: rgb(12, 14, 27);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .ant-tabs-tab-btn:focus {
-  color: #21bf96 !important;
+  color:-moz-radial-gradient(circle at 0% 56%, rgba(35, 0, 255, 1) 0%, rgba(19, 99, 255, 1) 0%, rgba(35, 38, 223, 1) 67%);
+  color:-webkit-radial-gradient(circle at 0% 56%, rgba(35, 0, 255, 1) 0%, rgba(19, 99, 255, 1) 0%, rgba(35, 38, 223, 1) 67%);
+  color:-o-radial-gradient(circle at 0% 56%, rgba(35, 0, 255, 1) 0%, rgba(19, 99, 255, 1) 0%, rgba(35, 38, 223, 1) 67%);
+  color:-ms-radial-gradient(circle at 0% 56%, rgba(35, 0, 255, 1) 0%, rgba(19, 99, 255, 1) 0%, rgba(35, 38, 223, 1) 67%);
+  color:radial-gradient(circle at 0% 56%, rgba(35, 0, 255, 1) 0%, rgba(19, 99, 255, 1) 0%, rgba(35, 38, 223, 1) 67%);
   border-bottom: none !important;
 }
 .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap {
@@ -223,6 +254,11 @@
 .ant-btn:not([disabled]):hover {
   margin-left: 5px !important;
   padding-left: 5px !important;
+}
+
+.ant-tabs-tabpane {
+  text-shadow: 0 0 0.25px transparent !important;
+  border-bottom: none !important;
 }
 
 .ant-btn:not([disabled]) {
@@ -320,6 +356,10 @@ h1 {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+.Logo {
+  margin-left: 20px !important;
 }
 
 @media screen and (max-width: 700px) {
